@@ -1,9 +1,10 @@
 export default {
+  ssr: false,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'NuxtPS',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'pt_br'
     },
     meta: [
       { charset: 'utf-8' },
@@ -31,10 +32,19 @@ export default {
   buildModules: [
   ],
 
+  primevue: {
+    theme: 'saga-purple',
+    ripple:true,
+    components: [
+      'Button', 'Sidebar'
+    ],
+},
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    'primevue/nuxt',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

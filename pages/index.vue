@@ -1,5 +1,8 @@
 <template>
-  <Tutorial/>
+  <div>
+    <Button label="tela index"/>
+    <Tutorial/>
+  </div>
 </template>
 
 <script>
